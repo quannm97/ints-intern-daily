@@ -1,10 +1,12 @@
-import Axios from "axios-observable";
+import axios from "axios";
+import ListProduct from "./components/ListProduct/ListProduct";
 
 function App() {
-  console.log(Axios.request());
+  axios.get('https://fakestoreapi.com/products').then(response => console.log(response))
+
   return (
     <div className="App">
-
+      <ListProduct/>
     </div>
   );
 }
