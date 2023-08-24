@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import { fetchProduct } from "../redux/action/Product"
+import { fetchProduct } from "../redux/action/Product.action"
 
 const useActions = () => {
 
