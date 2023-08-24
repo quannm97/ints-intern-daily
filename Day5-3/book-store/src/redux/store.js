@@ -1,15 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { createEpicMiddleware } from "redux-observable";
-import product from "./reducer/Product";
-
+import rootEpic from "./epic";
+import productsReducer from "./reducer/productsReducer";
 const epicMiddleware = createEpicMiddleware();
 
 const reducer = {
-    product: product
+    products: productsReducer
 }
+
 
 
 export default configureStore({
     reducer,
     middleware: [epicMiddleware],
 });
+
+epicMiddleware.run(rootEpic);

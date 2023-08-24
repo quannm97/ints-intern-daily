@@ -1,15 +1,15 @@
 import React from 'react'
+import './ProductCard.scss'
 
 const ProductCard = ({product}) => {
 
     const randomNumb = () => {
-        return Math.floor(Math.random()*3)
+        return Math.floor(Math.random()*2)
     }
     
   return (
     <>
         <div className="productCard">
-            <div className="container">
                 <div className="productCard__img">
                     <img src={product?.images[randomNumb()]} alt="productImg" />
                 </div>
@@ -21,7 +21,6 @@ const ProductCard = ({product}) => {
                     <button>ADD TOO CART</button>
                 </div>
             </div>
-        </div>
     </>
   )
 }

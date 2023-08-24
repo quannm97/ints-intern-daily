@@ -1,0 +1,10 @@
+.productCard{
+    max-width: 350px;
+    &&__img{ 
+        max-width: 100%;
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

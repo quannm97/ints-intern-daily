@@ -1,0 +1,48 @@
+.productCard {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    &__img {
+      flex: 1;
+      margin-right: 20px;
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+    &__detail {
+      flex: 2;
+      
+      &--title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      
+      &--price {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+      
+      &--description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+      
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  

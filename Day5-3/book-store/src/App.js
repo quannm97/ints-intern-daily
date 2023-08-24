@@ -1,11 +1,10 @@
-import axios from "axios";
-import ListProduct from "./components/ListProduct/ListProduct";
+import ProductList from "./components/ListProduct/ProductList";
 
 function App() {
 
   return (
     <div className="App">
-      <ListProduct/>
+      <ProductList/>
     </div>
   );
 }
