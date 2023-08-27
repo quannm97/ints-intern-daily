@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(32, 32, 32);
+    background-image: url("/images/black-chalk.jpg");
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-family: "Indie Flower", "Comic Sans", cursive;
+    font-size: 0.7em;
+}
+
+#board {
+    position: relative;
+    font-size: 120px;
+    margin: 1% auto;
+    border-collapse: collapse;
+}
+
+#board tbody {
+    border: 2px white solid;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
